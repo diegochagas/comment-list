@@ -1,33 +1,64 @@
-.App {
-  text-align: center;
+.App{
+  padding: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.approval-card {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  max-width: 500px;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.avatar img {
+  width: 70px;
+}
+
+.comment{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.comment--detail{
+  margin-left: 10px;
+}
+
+.user-name{
+  font-weight: bold;
+}
+
+.date {
+  margin-left: 20px;
+  color: gray;
+}
+
+hr{
+  height: 1px;
+  border: none;
+  background-color: lightgray;
+}
+
+.buttons {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+  background: none;
+  border: 1px solid black;
+  padding: 10px;
+  width: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-approve {
+  border-color: green;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  color: green;
+}
+
+.btn-decline {
+  border-color: red;
+  border-radius: 0 5px 5px 0;
+  color: red;
 }
