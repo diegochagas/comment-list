@@ -12,16 +12,17 @@ class App extends Component {
       "Looks great",
       "Great comment that is an example to test if the page works well"
     ];
-    const date = JSON.stringify(faker.date.past());
     return (
       <div className="App">
         {comments.map((content, index) => {
+          let date = faker.date.recent();
+          let fullTime = `${date.toLocaleDateString()} at ${date.toLocaleTimeString()}`;
           return (
             <ApprovalCard key={`comment${index}`}>
               <CommentDetail
                 avatarURL={faker.image.avatar()}
                 userName={faker.name.firstName()}
-                date={date}
+                date={fullTime}
                 content={content}
               />
             </ApprovalCard>
